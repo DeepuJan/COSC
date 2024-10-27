@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/1001/385/desktop-wallpaper-gfx-shonen-jump.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure it covers the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.box {
+    width: 400px;  /* Fixed width */
+    height: 400px; /* Fixed height for equal dimensions */
+    padding: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Align form elements vertically */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(31, 31, 33, 0.85);
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.m-plus-1-uniquifier {
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+}
+
+.form-title {
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    background-color: #FF6F61; /* Coral color */
+    border: none;
+    color: white;
+    width: 100%; /* Full width for buttons */
+    padding: 10px; /* Increase padding */
+}
+
+.btn-custom:hover {
+    background-color: #FF4F3B; /* Darker Coral for hover effect */
+    transition: background-color 0.3s ease;
+}
